@@ -8,14 +8,51 @@ const questions = [
         type: 'input' ,
         name: 'title' ,
         message: 'What is your project title?'
+    },
+    {
+        type: 'input',
+        name: 'description',
+        message: 'Enter a description of your project:'
+    },
+    {
+        type: 'input',
+        name: 'installation',
+        message: 'What are the installation instructions?'
+    },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'Please provide usage information:'
+    },
+    {
+        type: 'input',
+        name: 'contributing',
+        message: 'Please provide contribution guidelines:'
+    },
+    {
+        type: 'input',
+        name: 'tests',
+        message: 'Please provide testing instructions:'
     }
-    
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(answers) {
     const addToReadme = `
-# ${answers.title}`
+# ${answers.title}
+
+## Installation
+${answers.installation}
+
+## Usage
+${answers.usage}
+
+## Contributing
+${answers.contributing}
+
+## Tests
+${answers.tests}
+`
 
     fs.writeFile('README.md', addToReadme, (err) => {
         if (err) {
