@@ -33,6 +33,22 @@ const questions = [
         type: 'input',
         name: 'tests',
         message: 'Please provide testing instructions:'
+    },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'Please choose a license for your project:',
+        choices: ['MIT', 'Apache 2.0', 'GNU GPLv3']
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'What is your GitHub username?'
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email address?'
     }
 ];
 
@@ -40,6 +56,9 @@ const questions = [
 function writeToFile(answers) {
     const addToReadme = `
 # ${answers.title}
+
+## Description
+${answers.description}
 
 ## Installation
 ${answers.installation}
@@ -52,7 +71,15 @@ ${answers.contributing}
 
 ## Tests
 ${answers.tests}
-`
+
+## License
+This project is licensed under the ${answers.license} license.
+
+## Questions
+For any questions, please contact me:
+- GitHub: [${answers.github}](https://github.com/${answers.github})
+- Email: ${answers.email}
+`;
 
     fs.writeFile('README.md', addToReadme, (err) => {
         if (err) {
