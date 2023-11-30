@@ -81,12 +81,12 @@ For any questions, please contact me:
 - Email: ${answers.email}
 `;
 
-    fs.writeFile('README.md', addToReadme, (err) => {
+    fs.writeFile('User-Created-Readme/UserREADME.md', addToReadme, (err) => {
         if (err) {
           console.error(err);
           return;
         }
-        console.log('README.md file generated successfully!');
+        console.log('UserREADME.md file generated successfully!');
       });
 }
 
