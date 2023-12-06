@@ -1,25 +1,25 @@
 
-# BB
+# Reimagined Potato
 
 ## Description
-BB
+A CLI app that creates a readme file based off of user input.
 
 ## Installation
-BB
+No installation
 
 ## Usage
-B
+Use the node command in your terminal to use reimagined-potato
 
 ## Contributing
-BBB
+contribute please
 
 ## Tests
-BNone
+ummm
 
 ## License
 This project is licensed under the MIT license.
 
 ## Questions
 For any questions, please contact me:
-- GitHub: [BELHEH](https://github.com/BELHEH)
-- Email: oops
+- GitHub: [maurasal](https://github.com/maurasal)
+- Email: maurasalgo@email.com

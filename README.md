@@ -10,7 +10,9 @@ You can quickly and easily create a README file by using a command-line applicat
 No installation, 'Potato' is a command-line app.
 
 ## Usage
-Run this app using the node command. For detailed usage instructions, please refer to tutorial video linked below.
+Run this app using the node command. For detailed usage instructions, please refer to tutorial video below.
+
+<video src="Reimagined-potato-walkthrough.mp4" controls title="Title"></video>
 
 ## License
 This project is licensed under the MIT license.
